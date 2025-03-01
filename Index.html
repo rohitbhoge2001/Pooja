@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Morning, Pooja! ☀️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="morning-melody.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="container">
+        <h1>Good Morning, Pooja! ☀️</h1>
+        <p>Hope your day is as bright and beautiful as your smile!</p>
+        <button onclick="showSurprise()">Click for a Surprise</button>
+        <p id="message"></p>
+        <button onclick="toggleMusic()">Pause/Play Music</button>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("message").innerHTML = "You are the sunshine of my life! ☀️❤️";
+        }
+
+        function toggleMusic() {
+            var music = document.getElementById("bgMusic");
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
